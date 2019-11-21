@@ -1,0 +1,31 @@
+{
+  "name": "gatsby-silverstripe-forms",
+  "version": "0.0.0",
+  "description": "Query Silverstripe CMS forms as data and import them into your Gatsby project",
+  "main": "index.js",
+  "repository": "https://github.com/unclecheese/gatsby-silverstripe-forms",
+  "author": "Uncle Cheese",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.15.1",
+    "lodash": "^4.17.15",
+    "react": "^16"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "typescript": "^3.6.2"
+  },
+  "peerDependencies": {
+    "gatsby-source-silverstripe": "^0"
+  },
+  "scripts": {
+    "watch": "tsc src/* --outDir lib --watch --jsx react --esModuleInterop --noImplicitUseStrict --target es2017",
+    "build": "tsc src/* --outDir lib --jsx react --esModuleInterop --noImplicitUseStrict --target es2017"
+  }
+}
